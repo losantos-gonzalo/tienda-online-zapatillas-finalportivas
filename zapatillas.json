@@ -1,0 +1,84 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Zapatillas Modelo 1",
+            "marca": "Marca A",
+            "precio": 59.99,
+            "stock": 101,
+            "img": "./img/zapas.png"
+        },
+        {
+            "id": 2,
+            "nombre": "Zapatillas Modelo 2",
+            "marca": "Marca B",
+            "precio": 79.99,
+            "stock": 10,
+            "img": "./img/Zapatillas_CourtJam_Control_para_Tenis_Negro.png"
+        },
+        {
+            "id": 3,
+            "nombre": "Zapatillas Modelo 3",
+            "marca": "Marca C",
+            "precio": 99.99,
+            "stock": 10,
+            "img": "./img/Zapatillas_NMD_R1_Blanco.png"
+        },
+        {
+            "id": 4,
+            "nombre": "Zapatillas Modelo 4",
+            "marca": "Marca A",
+            "precio": 69.99,
+            "stock": 10,
+            "img": "./img/Zapatillas_Alphaboost_V1_Negro.png"
+        },
+        {
+            "id": 5,
+            "nombre": "Zapatillas Modelo 5",
+            "marca": "Marca B",
+            "precio": 89.99,
+            "stock": 10,
+            "img": "./img/Zapatillas_Indoor_Ligra_7_Azul.png"
+        },
+        {
+            "id": 6,
+            "nombre": "Zapatillas Modelo 6",
+            "marca": "Marca C",
+            "precio": 109.99,
+            "stock": 10,
+            "img": "./img/Zapatillas_Runfalcon_3_Negro.png"
+        },
+        {
+            "id": 7,
+            "nombre": "Zapatillas Modelo 7",
+            "marca": "Marca A",
+            "precio": 79.99,
+            "stock": 10,
+            "img": "./img/Zapatillas_Duramo_SL_2.0_Azul.png"
+        },
+        {
+            "id": 8,
+            "nombre": "Zapatillas Modelo 8",
+            "marca": "Marca B",
+            "precio": 99.99,
+            "stock": 10,
+            "img": "./img/Zapatillas_Rivalry_Low_TR_Violeta.png"
+        },
+        {
+            "id": 9,
+            "nombre": "Zapatillas Modelo 9",
+            "marca": "Marca C",
+            "precio": 119.99,
+            "stock": 10,
+            "img": "./img/Zapatillas_de_Running_Switch_FWD_Negro.png"
+        },
+        {
+            "id": 10,
+            "nombre": "Zapatillas Modelo 10",
+            "marca": "Marca A",
+            "precio": 89.99,
+            "stock": 10,
+            "img": "./img/Zapatillas_Run_70s_Gris.png"
+        }
+    ]
+}
