@@ -13,16 +13,15 @@ const invocarArray = async () => {
             //cajitas
             contenidoDiv.innerHTML += `
             <div class="cajaPadre">
-                <div class="card cajaContenedora" style="width: 20rem; z-index: -1;">
+                <div class="card cajaContenedora" style="width: 20rem; z-index: 0;">
 
                     <img src="${producto.img}" class="card-img-top" alt="...">
 
                     <div class="card-body">
                         <h5 class="card-title">${producto.nombre}</h5>
                         <p class="card-text">$${producto.precio}</p>
-                        <p class="card-text">Stock: ${producto.stock}</p>
 
-                        <button type="button" class="btn btn-primary" id="btnPrincipal"> Añadir al carrito</button>
+                        <button type="button" class="btn btn-primary btnPrincipal" id="btnPrincipal"> Añadir al carrito</button>
 
                     </div>
 

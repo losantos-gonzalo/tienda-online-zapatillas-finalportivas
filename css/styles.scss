@@ -6,7 +6,6 @@
 }
 
 header {
-    z-index: 1;
 
     .nav__modific {
         position: fixed;
@@ -74,13 +73,6 @@ header {
                 a {
                     margin: 0.5rem;
                     font-size: 1.3rem;
-                    transition: all 0.3s ease-in-out;
-
-                    &:hover {
-                        transform: scale(1.2);
-                        color: #2c0000;
-                        text-shadow: 0px 0px 5px #fcfcfc;
-                    }
                 }
 
             }
@@ -108,13 +100,13 @@ main {
 
         h1 {
             padding-top: 8rem;
-            margin-left: 2rem;
-            border: 2px solid red;
+            margin-left: 5rem;
+            border: 2px solid #ff000000;
             font-size: 2rem;
         }
 
         .contenedorPrincipalSerccionMedia {
-            border: 2px solid red;
+            border: 2px solid rgb(255, 0, 0);
             height: 70vh;
         }
     }
@@ -124,26 +116,30 @@ main {
         padding: 0.5rem;
 
         .cajaContenedora {
-            border: 2px solid #66ff00;
+            border: 2px solid #000000;
             margin: 1rem;
             margin-left: 3rem;
             max-width: 15rem;
             max-height: 23rem;
+            margin-bottom: 5rem;
+            margin-top: -0.5rem;
 
-            .boton {
-                border: 2px solid red;
+            .btnPrincipal {
+                border: 2px solid #000000;
+                margin-left: 2rem;
+                margin-top: -0.5rem;
             }
         }
     }
 
     .contenedor {
         padding: 1.5rem;
-        border: 2px solid #000000;
+        border: 2px solid #00000033;
         display: flex;
         flex-wrap: wrap;
     }
 }
 
 .pieDePagina {
-    margin-top: 305vh;
+    margin-top: 167vh;
 }
