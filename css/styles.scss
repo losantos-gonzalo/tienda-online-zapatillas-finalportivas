@@ -109,6 +109,12 @@ main {
             border: 2px solid rgb(255, 0, 0);
             height: 70vh;
         }
+
+        .carrito {
+            border: 2px solid red;
+            position: fixed;
+            margin-left: 66rem;
+        }
     }
 
     .cajaPadre {
@@ -118,7 +124,7 @@ main {
         .cajaContenedora {
             border: 2px solid #000000;
             margin: 1rem;
-            margin-left: 3rem;
+            margin-left: 4rem;
             max-width: 15rem;
             max-height: 23rem;
             margin-bottom: 5rem;
