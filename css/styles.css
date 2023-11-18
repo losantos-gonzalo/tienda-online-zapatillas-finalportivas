@@ -78,15 +78,22 @@ main .contenedorPrincipal h1 {
   margin-left: 5rem;
   border: 2px solid rgba(255, 0, 0, 0);
   font-size: 2rem;
+  max-width: 25rem;
 }
 main .contenedorPrincipal .contenedorPrincipalSerccionMedia {
   border: 2px solid rgb(255, 0, 0);
   height: 70vh;
 }
 main .contenedorPrincipal .carrito {
-  border: 2px solid red;
+  border: 2px solid rgb(102, 255, 0);
   position: fixed;
-  margin-left: 66rem;
+  margin-left: 180vh;
+  width: 15rem;
+}
+main .contenedorPrincipal h4 {
+  border: 2px solid red;
+  width: 15rem;
+  margin-left: 180vh;
 }
 main .cajaPadre {
   border: 2px solid rgba(255, 0, 0, 0);

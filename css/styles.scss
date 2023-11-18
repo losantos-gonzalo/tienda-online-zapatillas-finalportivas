@@ -103,6 +103,7 @@ main {
             margin-left: 5rem;
             border: 2px solid #ff000000;
             font-size: 2rem;
+            max-width: 25rem;
         }
 
         .contenedorPrincipalSerccionMedia {
@@ -111,9 +112,16 @@ main {
         }
 
         .carrito {
-            border: 2px solid red;
+            border: 2px solid rgb(102, 255, 0);
             position: fixed;
-            margin-left: 66rem;
+            margin-left: 180vh;
+            width: 15rem;
+        }
+
+        h4 {
+            border: 2px solid red;
+            width: 15rem;
+            margin-left: 180vh;
         }
     }
 
