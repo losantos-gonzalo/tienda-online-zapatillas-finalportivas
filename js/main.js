@@ -30,11 +30,22 @@ const invocarArray = async () => {
             `;
 
             //evento click
-            const boton = document.getElementById("btnPrincipal");
+            const botones = document.querySelectorAll(".btnPrincipal");
 
-            boton.addEventListener(`click`, () => {
-                console.log(`Buenas tardes aca la respuesta del click`);
-            })
+            botones.forEach(boton => {
+                boton.addEventListener('click', () => {
+                    const divProducto = boton.closest(".card");
+                    const nombre = divProducto.querySelector(".card-title").textContent;
+                    const precioTexto = boton.querySelector(".card-text").textContent;
+                    const precio = parseFloat(precioTexto.replace(/\D/g, ''));
+                    const producto = { nombre, precio };
+
+                    carrito.productos.push(producto);
+                    carrito.total += precio;
+
+                    actualizarCarritoEnDOM();
+                });
+            });
         });
 
     } catch (error) {
