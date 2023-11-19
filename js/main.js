@@ -1,6 +1,6 @@
 // Inicialización del objeto carrito
 const carrito = {
-    productos: [],
+    productos: [], // [{ nombre, precio, cantidad }]
     total: 0,
 };
 
@@ -17,7 +17,7 @@ function actualizarCarritoEnDOM() {
         productoElement.classList.add("productoCarrito");
 
         productoElement.innerHTML = `
-            <p>${producto.nombre} - $${producto.precio}</p>
+            <p>${producto.nombre} - $${producto.precio} - Cantidad: ${producto.cantidad}</p>
         `;
 
         carritoElement.appendChild(productoElement);
@@ -54,18 +54,24 @@ const invocarArray = async () => {
                     </div>
                 </div>
             `;
-            
+
             cajita.appendChild(div);
 
             // Agregar evento click al botón "Añadir al carrito" después de crearlo
             div.querySelector(".btnPrincipal").addEventListener('click', () => {
                 const nombre = producto.nombre;
                 const precio = producto.precio;
-                const productoNuevo = { nombre, precio };
 
-                // Agregar el producto al carrito y actualizar visualmente
-                carrito.productos.push(productoNuevo);
-                carrito.total += precio;
+                // Verificar si el producto ya está en el carrito
+                const encontrado = carrito.productos.find(item => item.nombre === nombre);
+                if (encontrado) {
+                    encontrado.cantidad++; // Incrementar la cantidad si ya existe en el carrito
+                } else {
+                    const productoNuevo = { nombre, precio, cantidad: 1 }; // Si no existe, añadirlo con cantidad 1
+                    carrito.productos.push(productoNuevo);
+                }
+
+                carrito.total += precio; // Actualizar el total
                 actualizarCarritoEnDOM();
             });
         });
@@ -74,7 +80,6 @@ const invocarArray = async () => {
         console.error('Se ha producido un error:', error);
     }
 }
-
-// Llamar a la función invocarArray
 invocarArray();
+
 
