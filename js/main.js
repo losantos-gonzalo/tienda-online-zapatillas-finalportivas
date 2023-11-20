@@ -73,6 +73,7 @@ const invocarArray = async () => {
 
                 carrito.total += precio; // Actualizar el total
                 actualizarCarritoEnDOM();
+
             });
         });
 
@@ -81,5 +82,23 @@ const invocarArray = async () => {
     }
 }
 invocarArray();
+
+
+
+// funcion para vaciar carrito //
+function vaciarCarrito() {
+    carrito.productos = [];
+    carrito.total = 0;
+    actualizarCarritoEnDOM()
+    console.log("El carrito ha sido vaciado!");
+};
+
+let btnVaciarCarrito = document.getElementById("vaciarCarrito");
+
+if (btnVaciarCarrito) {
+    btnVaciarCarrito.addEventListener("click", vaciarCarrito);
+} else {
+    console.error("no se ah encontrado el elemento id con vaciarcarrito!")
+};
 
 

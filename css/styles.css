@@ -85,10 +85,14 @@ main .contenedorPrincipal .contenedorPrincipalSerccionMedia {
   height: 70vh;
 }
 main .contenedorPrincipal .carrito {
-  border: 2px solid rgb(102, 255, 0);
+  border: 2px solid #66ff00;
   position: fixed;
   margin-left: 180vh;
   width: 15rem;
+}
+main .contenedorPrincipal .botn-vaciar {
+  margin-left: 61.3rem;
+  position: fixed;
 }
 main .contenedorPrincipal h4 {
   border: 2px solid red;
@@ -121,5 +125,5 @@ main .contenedor {
 }
 
 .pieDePagina {
-  margin-top: 167vh;
+  margin-top: 235vh;
 }/*# sourceMappingURL=styles.css.map */
