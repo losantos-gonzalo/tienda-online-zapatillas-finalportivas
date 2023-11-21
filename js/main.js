@@ -1,12 +1,10 @@
-// Inicialización del objeto carrito
 const carrito = {
-    productos: [], // [{ nombre, precio, cantidad }]
+    productos: [],
     total: 0,
 };
 
-// Función para actualizar el carrito en el DOM
 function actualizarCarritoEnDOM() {
-    const carritoElement = document.getElementById("carritoElement"); // Elemento donde se mostrará el carrito
+    const carritoElement = document.getElementById("carritoElement");
 
     // Limpiar el carrito antes de actualizarlo
     carritoElement.innerHTML = "";
@@ -29,7 +27,6 @@ function actualizarCarritoEnDOM() {
     carritoElement.appendChild(totalElement);
 }
 
-// Función invocarArray
 const invocarArray = async () => {
     try {
         const respuesta = await fetch("./zapatillas.json");
@@ -83,9 +80,6 @@ const invocarArray = async () => {
 }
 invocarArray();
 
-
-
-// funcion para vaciar carrito //
 function vaciarCarrito() {
     carrito.productos = [];
     carrito.total = 0;
@@ -100,5 +94,14 @@ if (btnVaciarCarrito) {
 } else {
     console.error("no se ah encontrado el elemento id con vaciarcarrito!")
 };
+//////////////////////////////////////////////////////////////////
+const cajita = document.getElementById("cajita");
+cajita.innerHTML =`<div>
+<p>carrito</p>
+<div>`;
 
+function btnCarritoMostrar () {
+    let btnCarrito = document.getElementById("btn__carrito");
+    btnCarrito.addEventListener("click", );
+}
 

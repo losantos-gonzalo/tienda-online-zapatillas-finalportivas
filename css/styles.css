@@ -6,7 +6,7 @@
 }
 
 header .nav__modific {
-  position: fixed;
+  position: absolute;
   width: 100%;
 }
 header .nav__modific .container__modific {
@@ -68,7 +68,7 @@ main {
 main div input {
   border: 1px solid black;
   z-index: 1;
-  position: fixed;
+  position: absolute;
   left: 162vh;
   top: 2.7vh;
   border-radius: 5px;
@@ -91,7 +91,7 @@ main .contenedorPrincipal .carrito {
   width: 15rem;
 }
 main .contenedorPrincipal .botn-vaciar {
-  margin-left: 61.3rem;
+  margin-left: 70rem;
   position: fixed;
 }
 main .contenedorPrincipal h4 {
