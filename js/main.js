@@ -61,15 +61,18 @@ const invocarArray = async () => {
 
                 // Verificar si el producto ya está en el carrito
                 const encontrado = carrito.productos.find(item => item.nombre === nombre);
-                if (encontrado) {
-                    encontrado.cantidad++; // Incrementar la cantidad si ya existe en el carrito
-                } else {
-                    const productoNuevo = { nombre, precio, cantidad: 1 }; // Si no existe, añadirlo con cantidad 1
-                    carrito.productos.push(productoNuevo);
-                }
 
-                carrito.total += precio; // Actualizar el total
-                actualizarCarritoEnDOM();
+                setTimeout(() => {
+                    if (encontrado) {
+                        encontrado.cantidad++; // Incrementar la cantidad si ya existe en el carrito
+                    } else {
+                        const productoNuevo = { nombre, precio, cantidad: 1 }; // Si no existe, añadirlo con cantidad 1
+                        carrito.productos.push(productoNuevo);
+                    }
+
+                    carrito.total += precio; // Actualizar el total
+                    actualizarCarritoEnDOM();
+                }, 400);
 
             });
         });
@@ -113,9 +116,7 @@ btnAlert.addEventListener("click", () => {
 });
 
 ///////////////////////////////////////////////////////////////////
-setTimeout(() => {
 
-}, 5000);
 
 
 
