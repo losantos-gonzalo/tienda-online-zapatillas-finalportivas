@@ -10,7 +10,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position-x: 10px;
+  background-position-y: -5rem;
 }
 body header .nav__modific {
   position: absolute;
@@ -86,21 +86,26 @@ body main .contenedorPrincipal h1 {
   font-size: 2rem;
   max-width: 25rem;
   color: white;
+  text-shadow: 2px 0px 10px black;
 }
 body main .contenedorPrincipal .contenedorPrincipalSerccionMedia {
   border: 2px solid #ff0000;
   height: 70vh;
 }
 body main .contenedorPrincipal .carrito {
+  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   position: fixed;
-  border: 2px solid #66ff00;
+  border: 2px solid rgba(39, 39, 39, 0.6784313725);
   margin-left: 180vh;
   width: 15rem;
+  background-color: rgba(255, 255, 255, 0.3882352941);
+  color: #000000;
+  border-radius: 5px;
 }
 body main .contenedorPrincipal .botn-vaciar {
-  margin-left: 70rem;
+  margin-left: 71rem;
   position: fixed;
 }
 body main .contenedorPrincipal h4 {
@@ -131,6 +136,13 @@ body main .contenedor {
   border: 2px solid rgba(0, 0, 0, 0.2);
   display: flex;
   flex-wrap: wrap;
+}
+body .custom-alert {
+  border: 2px solid #000000;
+  width: 15rem;
+  margin-top: 15rem;
+  margin-right: 2.5rem;
+  background-color: red;
 }
 body .pieDePagina {
   margin-top: 235vh;

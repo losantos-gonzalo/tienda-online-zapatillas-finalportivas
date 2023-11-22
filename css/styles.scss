@@ -10,7 +10,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position-x: 10px;
+    background-position-y: -5rem;
 
     header {
 
@@ -112,6 +112,7 @@ body {
                 font-size: 2rem;
                 max-width: 25rem;
                 color: white;
+                text-shadow: 2px 0px 10px black;
             }
 
             .contenedorPrincipalSerccionMedia {
@@ -120,16 +121,20 @@ body {
             }
 
             .carrito {
+                margin-top: 2rem;
                 display: flex;
                 flex-wrap: wrap;
                 position: fixed;
-                border: 2px solid #66ff00;
+                border: 2px solid #272727ad;
                 margin-left: 180vh;
                 width: 15rem;
+                background-color: #ffffff63;
+                color: #000000;
+                border-radius: 5px;
             }
 
             .botn-vaciar {
-                margin-left: 70rem;
+                margin-left: 71rem;
                 position: fixed;
             }
 
@@ -168,6 +173,14 @@ body {
             display: flex;
             flex-wrap: wrap;
         }
+    }
+
+    .custom-alert {
+        border: 2px solid #000000;
+        width: 15rem;
+        margin-top: 15rem;
+        margin-right: 2.5rem;
+        background-color: red;
     }
 
     .pieDePagina {

@@ -96,19 +96,26 @@ if (btnVaciarCarrito) {
     console.error("no se ah encontrado el elemento id con vaciarcarrito!")
 };
 //////////////////////////////////////////////////////////////////
+let btnAlert = document.getElementById("vaciarCarrito");
 
-let btnAlerCarrito = getElementById("vaciarCarrito");
-
-btnAlerCarrito.addEventListener("click", () => {
+btnAlert.addEventListener("click", () => {
 
     Swal.fire({
         position: "top-end",
         icon: "success",
-        title: "Your work has been saved",
+        title: "El carrito se vacio con Exito!",
         showConfirmButton: false,
-        timer: 1500
+        timer: 1600,
+        customClass: {
+            popup: 'custom-alert'
+        }
     });
+});
 
-})
+///////////////////////////////////////////////////////////////////
+setTimeout(() => {
+
+}, 5000);
+
 
 
