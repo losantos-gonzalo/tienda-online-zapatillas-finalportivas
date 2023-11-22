@@ -91,17 +91,24 @@ let btnVaciarCarrito = document.getElementById("vaciarCarrito");
 
 if (btnVaciarCarrito) {
     btnVaciarCarrito.addEventListener("click", vaciarCarrito);
+
 } else {
     console.error("no se ah encontrado el elemento id con vaciarcarrito!")
 };
 //////////////////////////////////////////////////////////////////
-const cajita = document.getElementById("cajita");
-cajita.innerHTML =`<div>
-<p>carrito</p>
-<div>`;
 
-function btnCarritoMostrar () {
-    let btnCarrito = document.getElementById("btn__carrito");
-    btnCarrito.addEventListener("click", );
-}
+let btnAlerCarrito = getElementById("vaciarCarrito");
+
+btnAlerCarrito.addEventListener("click", () => {
+
+    Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Your work has been saved",
+        showConfirmButton: false,
+        timer: 1500
+    });
+
+})
+
 

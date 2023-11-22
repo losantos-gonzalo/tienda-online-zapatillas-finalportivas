@@ -5,161 +5,172 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+body {
+    background-image: url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: 10px;
 
-    .nav__modific {
-        position: absolute;
-        width: 100%;
+    header {
 
-        .container__modific {
-            margin-top: -8px;
-            margin-bottom: -8px;
-            background-color: #d8d8d8;
-            box-shadow: 2px 3px 6px 0.5px #000000bf;
+        .nav__modific {
+            position: absolute;
+            width: 100%;
 
-            div {
-                display: flex;
-                margin-left: 2rem;
-
-                img {
-                    width: 10%;
-                    margin-top: -0.5rem;
-                    border-radius: 5px;
-                }
-
-                p {
-                    font-size: 1.2rem;
-                    padding-top: 1rem;
-                }
-            }
-
-            .nav__gonzalolosantos {
-                display: flex;
-                margin-left: auto;
-
-                .name {
-                    text-decoration: none;
-                }
-
-                .img__izquierda__logo {
-                    width: 2rem;
-
-                    img {
-                        width: 40%;
-                        border: 1px solid #238f0d;
-                    }
-                }
+            .container__modific {
+                margin-top: -8px;
+                margin-bottom: -8px;
+                background-color: #d8d8d8;
+                box-shadow: 2px 3px 6px 0.5px #000000bf;
 
                 div {
+                    display: flex;
+                    margin-left: 2rem;
 
                     img {
-                        border: 4px double #000000;
-                        margin-left: 5rem;
-                        width: 20%;
-                        margin-top: 2px;
-                        border-radius: 4px;
+                        width: 10%;
+                        margin-top: -0.5rem;
+                        border-radius: 5px;
+                    }
+
+                    p {
+                        font-size: 1.2rem;
+                        padding-top: 1rem;
                     }
                 }
-            }
 
-            a {
-                color: #000000;
-                margin-top: 0.7rem;
-            }
+                .nav__gonzalolosantos {
+                    display: flex;
+                    margin-left: auto;
 
-            .ini__contact__etc {
-                margin-left: auto;
+                    .name {
+                        text-decoration: none;
+                    }
 
-                a {
-                    margin: 0.5rem;
-                    font-size: 1.3rem;
+                    .img__izquierda__logo {
+                        width: 2rem;
+
+                        img {
+                            width: 40%;
+                            border: 1px solid #238f0d;
+                        }
+                    }
+
+                    div {
+
+                        img {
+                            border: 4px double #000000;
+                            margin-left: 5rem;
+                            width: 20%;
+                            margin-top: 2px;
+                            border-radius: 4px;
+                        }
+                    }
                 }
 
+                a {
+                    color: #000000;
+                    margin-top: 0.7rem;
+                }
+
+                .ini__contact__etc {
+                    margin-left: auto;
+
+                    a {
+                        margin: 0.5rem;
+                        font-size: 1.3rem;
+                    }
+
+                }
             }
         }
     }
-}
 
-main {
-    z-index: 0;
-    height: 100vh;
+    main {
+        z-index: 0;
+        height: 100vh;
 
-    div {
+        div {
 
-        input {
-            border: 1px solid black;
-            z-index: 1;
-            position: absolute;
-            left: 162vh;
-            top: 2.7vh;
-            border-radius: 5px;
+            input {
+                border: 1px solid black;
+                z-index: 1;
+                position: absolute;
+                left: 162vh;
+                top: 2.7vh;
+                border-radius: 5px;
+            }
         }
-    }
 
-    .contenedorPrincipal {
+        .contenedorPrincipal {
 
-        h1 {
-            padding-top: 8rem;
-            margin-left: 5rem;
+            h1 {
+                padding-top: 8rem;
+                margin-left: 5rem;
+                border: 2px solid #ffffff00;
+                font-size: 2rem;
+                max-width: 25rem;
+                color: white;
+            }
+
+            .contenedorPrincipalSerccionMedia {
+                border: 2px solid #ff0000;
+                height: 70vh;
+            }
+
+            .carrito {
+                display: flex;
+                flex-wrap: wrap;
+                position: fixed;
+                border: 2px solid #66ff00;
+                margin-left: 180vh;
+                width: 15rem;
+            }
+
+            .botn-vaciar {
+                margin-left: 70rem;
+                position: fixed;
+            }
+
+            h4 {
+                border: 2px solid red;
+                width: 15rem;
+                margin-left: 180vh;
+            }
+
+        }
+
+        .cajaPadre {
             border: 2px solid #ff000000;
-            font-size: 2rem;
-            max-width: 25rem;
-        }
+            padding: 0.5rem;
 
-        .contenedorPrincipalSerccionMedia {
-            border: 2px solid rgb(255, 0, 0);
-            height: 70vh;
-        }
-
-        .carrito {
-            border: 2px solid #66ff00;
-            position: fixed;
-            margin-left: 180vh;
-            width: 15rem;
-        }
-
-        .botn-vaciar {
-            margin-left: 70rem;
-            position: fixed;
-        }
-
-        h4 {
-            border: 2px solid red;
-            width: 15rem;
-            margin-left: 180vh;
-        }
-
-    }
-
-    .cajaPadre {
-        border: 2px solid #ff000000;
-        padding: 0.5rem;
-
-        .cajaContenedora {
-            border: 2px solid #000000;
-            margin: 1rem;
-            margin-left: 4rem;
-            max-width: 15rem;
-            max-height: 23rem;
-            margin-bottom: 5rem;
-            margin-top: -0.5rem;
-
-            .btnPrincipal {
+            .cajaContenedora {
                 border: 2px solid #000000;
-                margin-left: 2rem;
+                margin: 1rem;
+                margin-left: 4rem;
+                max-width: 15rem;
+                max-height: 23rem;
+                margin-bottom: 5rem;
                 margin-top: -0.5rem;
+
+                .btnPrincipal {
+                    border: 2px solid #000000;
+                    margin-left: 2rem;
+                    margin-top: -0.5rem;
+                }
             }
         }
+
+        .contenedor {
+            padding: 1.5rem;
+            border: 2px solid #00000033;
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 
-    .contenedor {
-        padding: 1.5rem;
-        border: 2px solid #00000033;
-        display: flex;
-        flex-wrap: wrap;
+    .pieDePagina {
+        margin-top: 235vh;
     }
-}
-
-.pieDePagina {
-    margin-top: 235vh;
 }

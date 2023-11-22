@@ -5,67 +5,73 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header .nav__modific {
+body {
+  background-image: url(../img/portada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: 10px;
+}
+body header .nav__modific {
   position: absolute;
   width: 100%;
 }
-header .nav__modific .container__modific {
+body header .nav__modific .container__modific {
   margin-top: -8px;
   margin-bottom: -8px;
   background-color: #d8d8d8;
   box-shadow: 2px 3px 6px 0.5px rgba(0, 0, 0, 0.7490196078);
 }
-header .nav__modific .container__modific div {
+body header .nav__modific .container__modific div {
   display: flex;
   margin-left: 2rem;
 }
-header .nav__modific .container__modific div img {
+body header .nav__modific .container__modific div img {
   width: 10%;
   margin-top: -0.5rem;
   border-radius: 5px;
 }
-header .nav__modific .container__modific div p {
+body header .nav__modific .container__modific div p {
   font-size: 1.2rem;
   padding-top: 1rem;
 }
-header .nav__modific .container__modific .nav__gonzalolosantos {
+body header .nav__modific .container__modific .nav__gonzalolosantos {
   display: flex;
   margin-left: auto;
 }
-header .nav__modific .container__modific .nav__gonzalolosantos .name {
+body header .nav__modific .container__modific .nav__gonzalolosantos .name {
   text-decoration: none;
 }
-header .nav__modific .container__modific .nav__gonzalolosantos .img__izquierda__logo {
+body header .nav__modific .container__modific .nav__gonzalolosantos .img__izquierda__logo {
   width: 2rem;
 }
-header .nav__modific .container__modific .nav__gonzalolosantos .img__izquierda__logo img {
+body header .nav__modific .container__modific .nav__gonzalolosantos .img__izquierda__logo img {
   width: 40%;
   border: 1px solid #238f0d;
 }
-header .nav__modific .container__modific .nav__gonzalolosantos div img {
+body header .nav__modific .container__modific .nav__gonzalolosantos div img {
   border: 4px double #000000;
   margin-left: 5rem;
   width: 20%;
   margin-top: 2px;
   border-radius: 4px;
 }
-header .nav__modific .container__modific a {
+body header .nav__modific .container__modific a {
   color: #000000;
   margin-top: 0.7rem;
 }
-header .nav__modific .container__modific .ini__contact__etc {
+body header .nav__modific .container__modific .ini__contact__etc {
   margin-left: auto;
 }
-header .nav__modific .container__modific .ini__contact__etc a {
+body header .nav__modific .container__modific .ini__contact__etc a {
   margin: 0.5rem;
   font-size: 1.3rem;
 }
-
-main {
+body main {
   z-index: 0;
   height: 100vh;
 }
-main div input {
+body main div input {
   border: 1px solid black;
   z-index: 1;
   position: absolute;
@@ -73,37 +79,40 @@ main div input {
   top: 2.7vh;
   border-radius: 5px;
 }
-main .contenedorPrincipal h1 {
+body main .contenedorPrincipal h1 {
   padding-top: 8rem;
   margin-left: 5rem;
-  border: 2px solid rgba(255, 0, 0, 0);
+  border: 2px solid rgba(255, 255, 255, 0);
   font-size: 2rem;
   max-width: 25rem;
+  color: white;
 }
-main .contenedorPrincipal .contenedorPrincipalSerccionMedia {
-  border: 2px solid rgb(255, 0, 0);
+body main .contenedorPrincipal .contenedorPrincipalSerccionMedia {
+  border: 2px solid #ff0000;
   height: 70vh;
 }
-main .contenedorPrincipal .carrito {
-  border: 2px solid #66ff00;
+body main .contenedorPrincipal .carrito {
+  display: flex;
+  flex-wrap: wrap;
   position: fixed;
+  border: 2px solid #66ff00;
   margin-left: 180vh;
   width: 15rem;
 }
-main .contenedorPrincipal .botn-vaciar {
+body main .contenedorPrincipal .botn-vaciar {
   margin-left: 70rem;
   position: fixed;
 }
-main .contenedorPrincipal h4 {
+body main .contenedorPrincipal h4 {
   border: 2px solid red;
   width: 15rem;
   margin-left: 180vh;
 }
-main .cajaPadre {
+body main .cajaPadre {
   border: 2px solid rgba(255, 0, 0, 0);
   padding: 0.5rem;
 }
-main .cajaPadre .cajaContenedora {
+body main .cajaPadre .cajaContenedora {
   border: 2px solid #000000;
   margin: 1rem;
   margin-left: 4rem;
@@ -112,18 +121,17 @@ main .cajaPadre .cajaContenedora {
   margin-bottom: 5rem;
   margin-top: -0.5rem;
 }
-main .cajaPadre .cajaContenedora .btnPrincipal {
+body main .cajaPadre .cajaContenedora .btnPrincipal {
   border: 2px solid #000000;
   margin-left: 2rem;
   margin-top: -0.5rem;
 }
-main .contenedor {
+body main .contenedor {
   padding: 1.5rem;
   border: 2px solid rgba(0, 0, 0, 0.2);
   display: flex;
   flex-wrap: wrap;
 }
-
-.pieDePagina {
+body .pieDePagina {
   margin-top: 235vh;
 }/*# sourceMappingURL=styles.css.map */
