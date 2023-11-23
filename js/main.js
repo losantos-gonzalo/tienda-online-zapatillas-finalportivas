@@ -30,8 +30,6 @@ const invocarArray = async () => {
         const datos = await respuesta.json();
         const cajita = document.getElementById("contenedor");
 
-        console.log(datos);
-
         cajita.innerHTML = "";
 
         datos.productos.forEach(producto => {
