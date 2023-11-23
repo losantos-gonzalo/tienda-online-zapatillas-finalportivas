@@ -16,8 +16,8 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary nav__modific"><!---->
-            <div class="container-fluid container__modific"><!---->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav__modific">
+            <div class="container-fluid container__modific">
                 <div class="logaso.jpg">
                     <a href="#">
                         <img src="./img/logo-addidas.png" alt=" img logo">
@@ -32,21 +32,18 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
-                        <div class="navbar-nav ini__contact__etc"><!---->
-
-                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
-
-                        </div>
                     </div>
                 </div>
         </nav>
     </header>
 
-    <!--Main-->
     <main>
 
         <div class="mainContenedor">
-            <input type="text" placeholder="Buscar">
+            <input type="text" id="filtro" placeholder="Buscar productos">
+            <li>
+                <ol id="filter"></ol>
+            </li>
         </div>
 
         <div class="contenedorPrincipal">
@@ -65,7 +62,7 @@
         </div>
 
     </main>
-    <!--PieDePagina-->
+
     <footer class="bg-dark text-light p-4 pieDePagina">
         <div class="container">
             <div class="row">
@@ -76,7 +73,6 @@
                 </div>
                 <div class="col-md-6 text-right">
                     <h5>Síguenos en redes sociales</h5>
-                    <!-- Agrega aquí tus iconos de redes sociales o enlaces -->
                 </div>
             </div>
         </div>

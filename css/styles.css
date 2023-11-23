@@ -71,12 +71,20 @@ body main {
   z-index: 0;
   height: 100vh;
 }
+body main .mainContenedor {
+  background-color: rgba(255, 255, 255, 0.685);
+  width: 20rem;
+  top: 5rem;
+  position: absolute;
+  left: 70rem;
+  width: 12.3rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.658);
+}
 body main div input {
   border: 1px solid black;
   z-index: 1;
   position: absolute;
-  left: 162vh;
-  top: 2.7vh;
   border-radius: 5px;
 }
 body main .contenedorPrincipal h1 {
@@ -93,7 +101,7 @@ body main .contenedorPrincipal .contenedorPrincipalSerccionMedia {
   height: 70vh;
 }
 body main .contenedorPrincipal .carrito {
-  margin-top: 2rem;
+  margin-top: 12rem;
   display: flex;
   flex-wrap: wrap;
   position: fixed;
@@ -107,6 +115,7 @@ body main .contenedorPrincipal .carrito {
 body main .contenedorPrincipal .botn-vaciar {
   margin-left: 71rem;
   position: fixed;
+  margin-top: 10rem;
 }
 body main .contenedorPrincipal h4 {
   border: 2px solid red;

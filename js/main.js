@@ -6,10 +6,8 @@ const carrito = {
 function actualizarCarritoEnDOM() {
     const carritoElement = document.getElementById("carritoElement");
 
-    // Limpiar el carrito antes de actualizarlo
     carritoElement.innerHTML = "";
 
-    // Recorrer los productos en el carrito y mostrarlos visualmente
     carrito.productos.forEach(producto => {
         const productoElement = document.createElement("div");
         productoElement.classList.add("productoCarrito");
@@ -21,7 +19,6 @@ function actualizarCarritoEnDOM() {
         carritoElement.appendChild(productoElement);
     });
 
-    // Actualizar el total del carrito
     const totalElement = document.createElement("div");
     totalElement.innerHTML = `<strong>Total: $${carrito.total}</strong>`;
     carritoElement.appendChild(totalElement);
@@ -35,7 +32,7 @@ const invocarArray = async () => {
 
         console.log(datos);
 
-        cajita.innerHTML = ""; // Limpiar el contenedor antes de agregar elementos
+        cajita.innerHTML = "";
 
         datos.productos.forEach(producto => {
             const div = document.createElement("div");
@@ -54,28 +51,50 @@ const invocarArray = async () => {
 
             cajita.appendChild(div);
 
-            // Agregar evento click al botón "Añadir al carrito" después de crearlo
             div.querySelector(".btnPrincipal").addEventListener('click', () => {
                 const nombre = producto.nombre;
                 const precio = producto.precio;
 
-                // Verificar si el producto ya está en el carrito
                 const encontrado = carrito.productos.find(item => item.nombre === nombre);
 
                 setTimeout(() => {
                     if (encontrado) {
-                        encontrado.cantidad++; // Incrementar la cantidad si ya existe en el carrito
+                        encontrado.cantidad++;
                     } else {
-                        const productoNuevo = { nombre, precio, cantidad: 1 }; // Si no existe, añadirlo con cantidad 1
+                        const productoNuevo = { nombre, precio, cantidad: 1 };
                         carrito.productos.push(productoNuevo);
                     }
 
-                    carrito.total += precio; // Actualizar el total
+                    carrito.total += precio;
+
+                    localStorage.setItem('totalCompra', carrito.total.toFixed(2));
+
                     actualizarCarritoEnDOM();
                 }, 400);
 
             });
+
         });
+
+
+        const filtroInput = document.getElementById("filtro");
+
+        filtroInput.addEventListener("input", filtrarProductos);
+
+        function filtrarProductos() {
+            const filtroTexto = filtroInput.value.toLowerCase();
+            const productosFiltrados = datos.productos.filter(producto => producto.nombre.toLowerCase().includes(filtroTexto));
+            const imprimirFilter = document.getElementById("filter");
+
+            imprimirFilter.innerHTML = '';
+
+            productosFiltrados.forEach(producto => {
+                const li = document.createElement("li");
+                li.textContent = producto.nombre;
+                imprimirFilter.appendChild(li);
+            });
+        }
+
 
     } catch (error) {
         console.error('Se ha producido un error:', error);
@@ -98,7 +117,7 @@ if (btnVaciarCarrito) {
 } else {
     console.error("no se ah encontrado el elemento id con vaciarcarrito!")
 };
-//////////////////////////////////////////////////////////////////
+
 let btnAlert = document.getElementById("vaciarCarrito");
 
 btnAlert.addEventListener("click", () => {
@@ -115,8 +134,12 @@ btnAlert.addEventListener("click", () => {
     });
 });
 
-///////////////////////////////////////////////////////////////////
+const filtroInput = document.getElementById("filtro");
 
-
-
-
+window.addEventListener('load', () => {
+    const totalGuardado = localStorage.getItem('totalCompra');
+    if (totalGuardado) {
+        carrito.total = parseFloat(totalGuardado);
+        actualizarCarritoEnDOM();
+    }
+});

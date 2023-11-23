@@ -2,7 +2,7 @@
     "productos": [
         {
             "id": 1,
-            "nombre": "Zapatillas Modelo 1",
+            "nombre": "Superstar",
             "marca": "Marca A",
             "precio": 59.99,
             "stock": 101,
@@ -10,7 +10,7 @@
         },
         {
             "id": 2,
-            "nombre": "Zapatillas Modelo 2",
+            "nombre": " Stan Smith",
             "marca": "Marca B",
             "precio": 79.99,
             "stock": 10,
@@ -18,7 +18,7 @@
         },
         {
             "id": 3,
-            "nombre": "Zapatillas Modelo 3",
+            "nombre": "UltraBoost",
             "marca": "Marca C",
             "precio": 99.99,
             "stock": 10,
@@ -26,7 +26,7 @@
         },
         {
             "id": 4,
-            "nombre": "Zapatillas Modelo 4",
+            "nombre": "NMD",
             "marca": "Marca A",
             "precio": 69.99,
             "stock": 10,
@@ -34,7 +34,7 @@
         },
         {
             "id": 5,
-            "nombre": "Zapatillas Modelo 5",
+            "nombre": "Gazelle",
             "marca": "Marca B",
             "precio": 89.99,
             "stock": 10,
@@ -42,7 +42,7 @@
         },
         {
             "id": 6,
-            "nombre": "Zapatillas Modelo 6",
+            "nombre": "Continental 80",
             "marca": "Marca C",
             "precio": 109.99,
             "stock": 10,
@@ -50,7 +50,7 @@
         },
         {
             "id": 7,
-            "nombre": "Zapatillas Modelo 7",
+            "nombre": "Yeezy Boost (varios modelos)",
             "marca": "Marca A",
             "precio": 79.99,
             "stock": 10,
@@ -58,7 +58,7 @@
         },
         {
             "id": 8,
-            "nombre": "Zapatillas Modelo 8",
+            "nombre": "Campus",
             "marca": "Marca B",
             "precio": 99.99,
             "stock": 10,
@@ -66,7 +66,7 @@
         },
         {
             "id": 9,
-            "nombre": "Zapatillas Modelo 9",
+            "nombre": "Swift Run",
             "marca": "Marca C",
             "precio": 119.99,
             "stock": 10,
@@ -74,7 +74,7 @@
         },
         {
             "id": 10,
-            "nombre": "Zapatillas Modelo 10",
+            "nombre": " Samba",
             "marca": "Marca A",
             "precio": 89.99,
             "stock": 10,
