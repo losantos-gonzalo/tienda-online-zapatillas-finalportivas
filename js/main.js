@@ -20,7 +20,7 @@ function actualizarCarritoEnDOM() {
     });
 
     const totalElement = document.createElement("div");
-    totalElement.innerHTML = `<strong>Total: $${carrito.total}</strong>`;
+    totalElement.innerHTML = `<strong>Total: $${carrito.total.toFixed(2)}</strong>`;
     carritoElement.appendChild(totalElement);
 }
 
@@ -99,7 +99,7 @@ const invocarArray = async () => {
     }
 }
 invocarArray();
-
+// vaciar carrito
 function vaciarCarrito() {
     carrito.productos = [];
     carrito.total = 0;
@@ -140,4 +140,26 @@ window.addEventListener('load', () => {
         carrito.total = parseFloat(totalGuardado);
         actualizarCarritoEnDOM();
     }
+});
+
+/////////////////////////////////////////////////////////////////////////
+function alternarVisibilidad() {
+    const elemento = document.getElementById("carritoElement"); // Reemplaza "miElemento" con el ID del elemento que quieres mostrar/ocultar
+
+    if (elemento.style.display === "none") {
+        elemento.style.display = "block";
+    } else {
+        elemento.style.display = "none";
+    }
+}
+
+const btnMostrarCarrito = document.getElementById("mostrarCarrito");
+
+btnMostrarCarrito.addEventListener("click", () => {
+    let nuevoDiv = document.createElement("div");
+    nuevoDiv.classList.add("btnMostrarCarrito");
+
+    document.body.appendChild(nuevoDiv);
+
+    alternarVisibilidad();
 });

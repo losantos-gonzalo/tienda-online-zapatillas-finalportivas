@@ -82,10 +82,13 @@ body main .mainContenedor {
   border: 1px solid rgba(0, 0, 0, 0.658);
 }
 body main div input {
-  border: 1px solid black;
-  z-index: 1;
-  position: absolute;
+  border: 1px solid rgb(255, 11, 11);
   border-radius: 5px;
+  margin-top: -10rem;
+  position: absolute;
+}
+body main div li {
+  border: 2px solid red;
 }
 body main .contenedorPrincipal h1 {
   padding-top: 8rem;
