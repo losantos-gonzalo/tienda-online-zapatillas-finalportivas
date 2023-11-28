@@ -83,6 +83,35 @@ body {
                     }
 
                 }
+
+                .mainContenedor {
+                    border: 2px solid rgb(0, 255, 213);
+                    position: absolute;
+                    max-width: 3rem;
+                    display: flex;
+
+                    input {
+                        margin-top: 10rem;
+                        border: 2px solid red;
+                        margin-left: 100vh;
+                        max-height: 1.5rem;
+                    }
+
+                    li {
+                        display: flex;
+                        border: 2px solid rgb(0, 255, 42);
+                        bottom: 10rem;
+                        flex-wrap: wrap;
+                        width: 15rem;
+                        z-index: 1;
+
+                        ol {
+                            border: 2px solid red;
+                            display: flex;
+                            flex-direction: column-reverse;
+                        }
+                    }
+                }
             }
         }
     }
@@ -100,20 +129,6 @@ body {
             width: 12.3rem;
             border-radius: 5px;
             border: 1px solid rgba(0, 0, 0, 0.658);
-        }
-
-        div {
-
-            input {
-                border: 1px solid rgb(255, 11, 11);
-                border-radius: 5px;
-                margin-top: -10rem;
-                position: absolute;
-            }
-
-            li {
-                border: 2px solid red;
-            }
         }
 
         .contenedorPrincipal {
