@@ -85,31 +85,18 @@ body {
                 }
 
                 .mainContenedor {
-                    border: 2px solid rgb(0, 255, 213);
+                    border: 2px solid rgb(255, 0, 0);
                     position: absolute;
                     max-width: 3rem;
                     display: flex;
+                    flex-direction: column;
+                    margin-top: 2.5rem;
 
                     input {
-                        margin-top: 10rem;
-                        border: 2px solid red;
-                        margin-left: 100vh;
-                        max-height: 1.5rem;
-                    }
-
-                    li {
-                        display: flex;
-                        border: 2px solid rgb(0, 255, 42);
-                        bottom: 10rem;
-                        flex-wrap: wrap;
-                        width: 15rem;
-                        z-index: 1;
-
-                        ol {
-                            border: 2px solid red;
-                            display: flex;
-                            flex-direction: column-reverse;
-                        }
+                        border: 2px solid #000000;
+                        margin-left: 90vh;
+                        width: 10rem;
+                        margin-bottom: 2rem;
                     }
                 }
             }
@@ -132,6 +119,18 @@ body {
         }
 
         .contenedorPrincipal {
+
+            .li_container {
+                border: 2px solid red;
+                width: 20rem;
+                margin-left: 90vh;
+                padding: 2rem;
+
+                .lista {
+                    border: 2px solid red;
+                    height: 15rem;
+                }
+            }
 
             h1 {
                 padding-top: 8rem;

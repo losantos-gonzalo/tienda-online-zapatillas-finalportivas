@@ -68,29 +68,18 @@ body header .nav__modific .container__modific .ini__contact__etc a {
   font-size: 1.3rem;
 }
 body header .nav__modific .container__modific .mainContenedor {
-  border: 2px solid rgb(0, 255, 213);
+  border: 2px solid rgb(255, 0, 0);
   position: absolute;
   max-width: 3rem;
   display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
 }
 body header .nav__modific .container__modific .mainContenedor input {
-  margin-top: 10rem;
-  border: 2px solid red;
-  margin-left: 100vh;
-  max-height: 1.5rem;
-}
-body header .nav__modific .container__modific .mainContenedor li {
-  display: flex;
-  border: 2px solid rgb(0, 255, 42);
-  bottom: 10rem;
-  flex-wrap: wrap;
-  width: 15rem;
-  z-index: 1;
-}
-body header .nav__modific .container__modific .mainContenedor li ol {
-  border: 2px solid red;
-  display: flex;
-  flex-direction: column-reverse;
+  border: 2px solid #000000;
+  margin-left: 90vh;
+  width: 10rem;
+  margin-bottom: 2rem;
 }
 body main {
   z-index: 0;
@@ -105,6 +94,16 @@ body main .mainContenedor {
   width: 12.3rem;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.658);
+}
+body main .contenedorPrincipal .li_container {
+  border: 2px solid red;
+  width: 20rem;
+  margin-left: 90vh;
+  padding: 2rem;
+}
+body main .contenedorPrincipal .li_container .lista {
+  border: 2px solid red;
+  height: 15rem;
 }
 body main .contenedorPrincipal h1 {
   padding-top: 8rem;
