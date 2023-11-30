@@ -103,13 +103,13 @@ body main .contenedorPrincipalSerccionMedia {
   height: 70vh;
 }
 body main .carrito {
-  margin-top: 12rem;
+  margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
   position: absolute;
   border: 2px solid rgba(39, 39, 39, 0.6784313725);
-  margin-left: 180vh;
-  width: 15rem;
+  margin-left: 181vh;
+  width: 16.5rem;
   background-color: rgba(255, 255, 255, 0.3882352941);
   color: #000000;
   border-radius: 5px;
