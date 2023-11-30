@@ -67,45 +67,29 @@ body header .nav__modific .container__modific .ini__contact__etc a {
   margin: 0.5rem;
   font-size: 1.3rem;
 }
-body header .nav__modific .container__modific .mainContenedor {
-  border: 2px solid rgb(255, 0, 0);
-  position: absolute;
-  max-width: 3rem;
-  display: flex;
-  flex-direction: column;
-  margin-top: 2.5rem;
-}
-body header .nav__modific .container__modific .mainContenedor input {
-  border: 2px solid #000000;
-  margin-left: 90vh;
-  width: 10rem;
-  margin-bottom: 2rem;
-}
 body main {
   z-index: 0;
   height: 100vh;
 }
+body main .contenedorPrincipal .li_container .lista {
+  border: 2px solid rgba(0, 0, 0, 0.432);
+  position: absolute;
+  margin-left: 181.4vh;
+  margin-top: 0.8rem;
+  border-radius: 5px;
+  background-color: rgba(221, 221, 202, 0.4941176471);
+}
 body main .mainContenedor {
-  background-color: rgba(255, 255, 255, 0.685);
+  background-color: rgba(255, 255, 255, 0.6862745098);
   width: 20rem;
   top: 5rem;
   position: absolute;
   left: 70rem;
   width: 12.3rem;
   border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.658);
+  border: 1px solid rgba(0, 0, 0, 0.6588235294);
 }
-body main .contenedorPrincipal .li_container {
-  border: 2px solid red;
-  width: 20rem;
-  margin-left: 90vh;
-  padding: 2rem;
-}
-body main .contenedorPrincipal .li_container .lista {
-  border: 2px solid red;
-  height: 15rem;
-}
-body main .contenedorPrincipal h1 {
+body main h1 {
   padding-top: 8rem;
   margin-left: 5rem;
   border: 2px solid rgba(255, 255, 255, 0);
@@ -114,15 +98,15 @@ body main .contenedorPrincipal h1 {
   color: white;
   text-shadow: 2px 0px 10px black;
 }
-body main .contenedorPrincipal .contenedorPrincipalSerccionMedia {
+body main .contenedorPrincipalSerccionMedia {
   border: 2px solid #ff0000;
   height: 70vh;
 }
-body main .contenedorPrincipal .carrito {
+body main .carrito {
   margin-top: 12rem;
   display: flex;
   flex-wrap: wrap;
-  position: fixed;
+  position: absolute;
   border: 2px solid rgba(39, 39, 39, 0.6784313725);
   margin-left: 180vh;
   width: 15rem;
@@ -130,21 +114,21 @@ body main .contenedorPrincipal .carrito {
   color: #000000;
   border-radius: 5px;
 }
-body main .contenedorPrincipal .botn-vaciar {
+body main .botn-vaciar {
   margin-left: 71rem;
-  position: fixed;
+  position: absolute;
   margin-top: 10rem;
 }
-body main .contenedorPrincipal h4 {
+body main h4 {
   border: 2px solid red;
   width: 15rem;
   margin-left: 180vh;
 }
-body main .cajaPadre {
+body .cajaPadre {
   border: 2px solid rgba(255, 0, 0, 0);
   padding: 0.5rem;
 }
-body main .cajaPadre .cajaContenedora {
+body .cajaPadre .cajaContenedora {
   border: 2px solid #000000;
   margin: 1rem;
   margin-left: 4rem;
@@ -153,23 +137,26 @@ body main .cajaPadre .cajaContenedora {
   margin-bottom: 5rem;
   margin-top: -0.5rem;
 }
-body main .cajaPadre .cajaContenedora .btnPrincipal {
+body .cajaPadre .cajaContenedora .btnPrincipal {
   border: 2px solid #000000;
   margin-left: 2rem;
   margin-top: -0.5rem;
 }
-body main .contenedor {
+body .contenedor {
   padding: 1.5rem;
   border: 2px solid rgba(0, 0, 0, 0.2);
   display: flex;
   flex-wrap: wrap;
+  z-index: 1;
 }
-body .custom-alert {
+
+.custom-alert {
   border: 2px solid #000000;
   width: 15rem;
   margin-top: 15rem;
   margin-right: 2.5rem;
 }
-body .pieDePagina {
-  margin-top: 235vh;
+
+.pieDePagina {
+  margin-top: 285vh;
 }/*# sourceMappingURL=styles.css.map */
