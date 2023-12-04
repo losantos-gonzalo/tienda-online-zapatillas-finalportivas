@@ -176,3 +176,14 @@ btnMostrarCarrito.addEventListener("click", () => {
     alternarVisibilidad();
 });
 
+
+// Ocultar el buscador
+document.addEventListener("click", function (event) {
+    const filterList = document.getElementById("filter");
+    const filtroInput = document.getElementById("filtro");
+
+    if (event.target !== filterList && event.target !== filtroInput) {
+
+        filterList.innerHTML = '';
+    }
+});
