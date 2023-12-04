@@ -86,12 +86,18 @@ const invocarArray = async () => {
 
             imprimirFilter.innerHTML = '';
 
-            productosFiltrados.forEach(producto => {
+            productosFiltrados.forEach((productoFiltrado) => {
                 const li = document.createElement("li");
-                li.textContent = producto.nombre;
+                li.textContent = productoFiltrado.nombre;
+                li.addEventListener("click", () => {
+                    const index = datos.productos.findIndex(producto => producto.nombre === productoFiltrado.nombre);
+                    const elementoProducto = document.querySelectorAll(".cajaPadre")[index];
+                    elementoProducto.scrollIntoView({ behavior: 'smooth' });
+                });
                 imprimirFilter.appendChild(li);
             });
         }
+
 
 
     } catch (error) {
@@ -163,3 +169,4 @@ btnMostrarCarrito.addEventListener("click", () => {
 
     alternarVisibilidad();
 });
+
