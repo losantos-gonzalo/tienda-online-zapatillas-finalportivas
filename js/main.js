@@ -99,6 +99,7 @@ const invocarArray = async () => {
     }
 }
 invocarArray();
+
 // vaciar carrito
 function vaciarCarrito() {
     carrito.productos = [];
@@ -142,9 +143,8 @@ window.addEventListener('load', () => {
     }
 });
 
-/////////////////////////////////////////////////////////////////////////
 function alternarVisibilidad() {
-    const elemento = document.getElementById("carritoElement"); // Reemplaza "miElemento" con el ID del elemento que quieres mostrar/ocultar
+    const elemento = document.getElementById("carritoElement");
 
     if (elemento.style.display === "none") {
         elemento.style.display = "block";
