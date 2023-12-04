@@ -79,6 +79,9 @@ body main .contenedorPrincipal .li_container .lista {
   border-radius: 5px;
   background-color: rgba(221, 221, 202, 0.4941176471);
 }
+body main .contenedorPrincipal .seleccionado {
+  border: 2px solid black;
+}
 body main .mainContenedor {
   background-color: rgba(255, 255, 255, 0.6862745098);
   width: 20rem;

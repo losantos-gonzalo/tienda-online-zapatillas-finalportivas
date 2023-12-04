@@ -93,10 +93,16 @@ const invocarArray = async () => {
                     const index = datos.productos.findIndex(producto => producto.nombre === productoFiltrado.nombre);
                     const elementoProducto = document.querySelectorAll(".cajaPadre")[index];
                     elementoProducto.scrollIntoView({ behavior: 'smooth' });
+
+                    li.classList.add('seleccionado');
+                    setTimeout(() => {
+                        li.classList.remove('seleccionado');
+                    }, 2000);
                 });
                 imprimirFilter.appendChild(li);
             });
         }
+
 
 
 
