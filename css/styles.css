@@ -118,6 +118,7 @@ body main .botn-vaciar {
   margin-left: 71rem;
   position: absolute;
   margin-top: 10rem;
+  top: 5rem;
 }
 body main h4 {
   border: 2px solid red;
